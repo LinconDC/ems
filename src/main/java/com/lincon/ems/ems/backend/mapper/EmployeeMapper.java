@@ -4,7 +4,7 @@ import com.lincon.ems.ems.backend.dto.EmployeeDto;
 import com.lincon.ems.ems.backend.entity.Employee;
 
 public class EmployeeMapper {
-    public static EmployeeDto toDto(Employee employee) {
+    public static EmployeeDto mapToEmployeeDto(Employee employee) {
         return new EmployeeDto(
                 employee.getId(),
                 employee.getFirstName(),
